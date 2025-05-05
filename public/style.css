@@ -1,5 +1,18 @@
 body {
-  background-color: gold;
+  color: #004477;
+  background-color: #d6eaff;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: #ee8800;
+}
+
+a:hover {
+  color: #004477;
 }
 
 .header {
