@@ -1,9 +1,18 @@
 body {
   background-color: gold;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.main {
   background-image: url('/images/profile_pic_of_me.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
 }
