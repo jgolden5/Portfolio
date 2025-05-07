@@ -10,6 +10,7 @@
   'about image projects'
   'experience image contact';
   height: 90vh;
+  grid-template-columns: 1fr 2fr 1fr;
   width: 100vw;
   font-weight: bold;
 }
@@ -32,9 +33,11 @@
 .center-image {
   grid-area: image;
   background-image: url('/images/profile_pic_of_me.jpg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
