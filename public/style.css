@@ -17,7 +17,6 @@ a:hover {
 }
 
 .main-header {
-  z-index: 1;
   width: 100%;
   padding: 1.4%;
   color: #004477;
@@ -28,7 +27,6 @@ a:hover {
 }
 
 .center-image {
-  z-index: 2;
   background-image: url('/images/profile_pic_of_me.jpg');
   background-size: contain;
   background-position: center;
