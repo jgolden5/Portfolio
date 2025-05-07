@@ -1,22 +1,19 @@
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
-}
-
-a:hover {
-  color: #004477;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'about image projects'
+  'experience image contact';
+}
+
 .main-header {
+  grid-area: 'header';
   width: 100%;
   padding: 1.4%;
   color: #004477;
@@ -27,10 +24,37 @@ a:hover {
 }
 
 .center-image {
+  grid-area: 'image';
   background-image: url('/images/profile_pic_of_me.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
+  padding: 0;
   margin: 0;
+}
+
+.box {
+  grid-area: 'box';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.about {
+  background-color: navy;
+}
+
+.experience {
+  background-color: red;
+}
+
+.projects {
+  background-color: green;
+}
+
+.contact {
+  background-color: yellow;
 }
