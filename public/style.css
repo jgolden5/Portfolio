@@ -33,7 +33,7 @@
 .center-image {
   grid-area: image;
   background-image: url('/images/profile_pic_of_me.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
