@@ -9,15 +9,14 @@
   grid-template-areas:
   'about image projects'
   'experience image contact';
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
+  font-weight: bold;
 }
 
 .main-header {
-  grid-area: 'header';
   width: 100%;
   padding: 1.4%;
-  color: #004477;
   background-color: #d6eaff;
   text-align: center;
   font-weight: bold;
@@ -25,7 +24,6 @@
 }
 
 .box {
-  grid-area: box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,12 +31,17 @@
 
 .center-image {
   grid-area: image;
-  background-color: teal;
+  background-image: url('/images/profile_pic_of_me.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }
 
 .about {
   grid-area: about;
-  background-color: navy;
+  background-color: teal;
 }
 
 .experience {
