@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: blue;
 }
 
 .grid-container {
@@ -37,6 +38,10 @@ a {
   font-size: 40px;
 }
 
+.box:hover {
+  background-color: #00dddd;
+}
+
 .center-image {
   grid-area: image;
   background-image: url('/images/profile_pic_of_me.jpg');
@@ -56,7 +61,7 @@ a {
 
 .credentials {
   grid-area: credentials;
-  background-color: red;
+  background-color: #fa003f;
 }
 
 .projects {
