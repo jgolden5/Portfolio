@@ -1,8 +1,3 @@
-body {
-  color: #004477;
-  background-color: #d6eaff;
-}
-
 a:link {
   color: blue;
 }
@@ -15,13 +10,25 @@ a:hover {
   color: #004477;
 }
 
-.header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  z-index: 1;
+  width: 100%;
+  padding: 1.4%;
+  color: #004477;
+  background-color: #d6eaff;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.main {
+.center-image {
+  z-index: 2;
   background-image: url('/images/profile_pic_of_me.jpg');
   background-size: contain;
   background-position: center;
