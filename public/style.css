@@ -7,9 +7,10 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-  'header header header'
   'about image projects'
   'experience image contact';
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-header {
@@ -23,38 +24,34 @@
   text-decoration: underline;
 }
 
-.center-image {
-  grid-area: 'image';
-  background-image: url('/images/profile_pic_of_me.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90vh;
-  padding: 0;
-  margin: 0;
-}
-
 .box {
-  grid-area: 'box';
+  grid-area: box;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
-  color: white;
+}
+
+.center-image {
+  grid-area: image;
+  background-color: teal;
 }
 
 .about {
+  grid-area: about;
   background-color: navy;
 }
 
 .experience {
+  grid-area: experience;
   background-color: red;
 }
 
 .projects {
+  grid-area: projects;
   background-color: green;
 }
 
 .contact {
+  grid-area: contact;
   background-color: yellow;
 }
